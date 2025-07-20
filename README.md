@@ -1,69 +1,64 @@
-# React + TypeScript + Vite
+# Case Studies Klik Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Name : Mochammad Radhi Akbar
 
-Currently, two official plugins are available:
+**Project**: Advanced Menu Management System
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple Menu Group Manage built with **React** and **TypeScript**.
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Core Technologies
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** (v18+) - Frontend framework with hooks
+- **TypeScript** - Type-safe JavaScript development
+- **Redux Toolkit** - State management
+- **React Router** (v6) - Client-side routing
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### UI & Styling
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautifully designed components
+
+## ✨ Key Features
+
+### Authentication
+
+- 🔒 Secure login/logout functionality
+- 👤 User registration system
+- 🛡️ Protected routes
+
+### Checklist Management
+
+- 🗂️ Create multiple checklists with custom colors
+- 📝 Add/remove todo items
+- ✅ Mark items as complete/incomplete
+- ✏️ Edit existing items
+- 🗑️ Delete checklists
+
+### User Experience
+
+- 📱 Fully responsive design
+- 🎨 Intuitive UI with visual feedback
+- ⚡ Optimized performance
+
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repo-url>
+   ```
+
+```bash
+   cd testassignment-klik-frontend
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+npm install
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+or
+npx vite
 ```
